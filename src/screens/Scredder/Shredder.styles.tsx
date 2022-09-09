@@ -12,7 +12,7 @@ export const ClearButton = styled.View`
 `;
 
 export const EmptyText = styled.Text`
-  margin-top: 20;
+  margin-top: 20px;
   text-align: center;
   font-size: 24px;
 `;
