@@ -33,12 +33,10 @@ const Root = () => {
         getTodosFromLS()
           .then((todos) => {
             if (todos && todos.length) dispatch(updateTodos(todos));
-            console.log(todos);
             setLoadingDataFromLS(false);
           })
           .catch(() => {
             setLoadingDataFromLS(false);
-            console.log("Error");
             setFailedLoading(true);
           });
       }
